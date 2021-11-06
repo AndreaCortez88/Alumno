@@ -20,7 +20,7 @@ class ResourceCursos(resources.ModelResource):
 
 class AdminCursos(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombre_cur']
-    list_display = ['pk_cursos', 'horas_cur', 'nombre_cur', 'descripcion', 'costo']
+    list_display = ['pk_cursos', 'horas_curso', 'nombre_cur', 'descripcion', 'costo']
     resource_class = ResourceCursos
 
 admin.site.register(Cursos, AdminCursos)
